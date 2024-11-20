@@ -30,6 +30,10 @@ mongoose
   .then(() => console.log("mongodb is connected"))
   .catch((e) => console.log(e));
 
+app.get("/", (req, res) => {
+  res.send("Backend is running!");
+});
+
 //routes configuration
 app.use("/auth", authRoutes);
 app.use("/media", mediaRoutes);
