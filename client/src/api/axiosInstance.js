@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-  baseURL: "https://udemy-clone-backend-u6go.onrender.com",
+  baseURL: import.meta.env.VITE_REACT_APP_API_URL,
   // baseURL: "http://localhost:5000",
 });
 
